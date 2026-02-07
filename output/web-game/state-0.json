@@ -1,0 +1,1 @@
+{"mode":"playing","coordinateSystem":"origin=(0,0) top-left; +x right; +y down","score":0,"lives":3,"elapsedSec":3.53,"player":{"x":484.9,"y":515,"speed":300,"shotCooldownSec":0},"bullets":[],"enemies":[{"x":205.2,"y":484.1,"hp":1,"speed":145.7},{"x":673.7,"y":200.1,"hp":2,"speed":96},{"x":565,"y":91.8,"hp":1,"speed":85.1},{"x":646.8,"y":-2.7,"hp":1,"speed":102.8}]}

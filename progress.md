@@ -26,3 +26,39 @@ Open TODOs / suggestions:
 - Add BGM/SFX and hit/explosion effects for stronger retro feel.
 - Add a small boss phase before victory score threshold.
 - Add dedicated restart hotkey prompt in start screen for discoverability.
+Update 3:
+- Reworked gameplay progression for user feedback:
+  - Faster horizontal pursuit with directional chase assist.
+  - Added Shift boost for manual burst movement.
+  - Added level/weapon progression at score 700/1700/3200.
+  - Weapon upgrades: single -> dual -> triple -> ace wing pattern.
+  - Increased scoring pace and tuned spawn pacing to reduce grind.
+  - Added HUD indicators: level, weapon, next upgrade score, win score.
+  - Expanded render_game_to_text with progression fields.
+Update 4:
+- Fixed major pacing issue where firing was effectively single-shot in automation/manual hold cases.
+- Added hold-to-fire behavior (holding Space now continuously fires by cooldown).
+- Reworked collision outcome from instant death to life loss + temporary invulnerability.
+- Tuned spawn/speed to keep pressure but allow consistent progression.
+- Verified progression in automated run:
+  - Reached LV3 (TRIPLE), LV4 (ACE WING), and VICTORY (score 5340).
+  - Screenshots confirm weapon upgrade banners and victory panel.
+  - No console/page errors generated.
+Update 5:
+- Implemented dual progression system:
+  - Player progression by score (weapon levels unchanged in concept).
+  - Enemy progression by score with explicit enemy levels and wave labels.
+- Added enemy wave tiers and archetypes:
+  - Scout swarm, intercept wing, siege fleet, meteor storm.
+  - New enemy types: interceptor, gunship (shoots), meteor (high HP, splits).
+- Added enemy bullet system and rendering.
+- Added enemy upgrade banner + HUD status for enemy level and next enemy threshold.
+- Expanded render_game_to_text with enemy level, wave, enemy bullets, and enemy types.
+Update 6:
+- Added documentation updates for dual progression in README.
+- Automated verification confirms enemy progression now visibly advances by score:
+  - E-LV2 (INTERCEPT WING) observed.
+  - E-LV3 (SIEGE FLEET) observed.
+  - E-LV4 (METEOR STORM) observed with meteor-type enemies and enemy bullets.
+- Victory run reached score 5739 with player/enemy both at LV4.
+- No console/page runtime errors in latest test cycle.

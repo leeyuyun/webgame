@@ -56,28 +56,28 @@ web_game/
 
 ```mermaid
 flowchart TD
-    A[index.html] --> B[canvas#game]
-    A --> C[game.js]
+    A["index.html"] --> B["canvas#game"]
+    A --> C["game.js"]
 
-    C --> D[Game State]
-    D --> D1[mode / score / lives]
-    D --> D2[player / bullets / enemies / stars]
+    C --> D["Game State"]
+    D --> D1["mode, score, lives"]
+    D --> D2["player, bullets, enemies, stars"]
 
-    C --> E[Input Layer]
-    E --> E1[keydown/keyup]
-    E --> E2[Enter / Move / Space / F]
+    C --> E["Input Layer"]
+    E --> E1["keydown / keyup"]
+    E --> E2["Enter / Move / Space / F"]
 
-    C --> F[Update Loop]
-    F --> F1[requestAnimationFrame]
-    F --> F2[update(dt)]
-    F --> F3[spawn + move + collide + win/lose]
+    C --> F["Update Loop"]
+    F --> F1["requestAnimationFrame"]
+    F --> F2["update(dt)"]
+    F --> F3["spawn + move + collide + win/lose"]
 
-    C --> G[Render Layer]
-    G --> G1[background + stars]
-    G --> G2[player / bullets / enemies]
-    G --> G3[HUD + state panels]
+    C --> G["Render Layer"]
+    G --> G1["background + stars"]
+    G --> G2["player + bullets + enemies"]
+    G --> G3["HUD + state panels"]
 
-    C --> H[Test Hooks]
-    H --> H1[window.advanceTime(ms)]
-    H --> H2[window.render_game_to_text()]
+    C --> H["Test Hooks"]
+    H --> H1["window.advanceTime(ms)"]
+    H --> H2["window.render_game_to_text()"]
 ```
